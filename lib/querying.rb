@@ -49,7 +49,7 @@ end
 
 def select_character_names_and_number_of_books_they_are_in
   "
-  SELECT character.name, COUNT(Books.title)
+  SELECT Characters.name, COUNT(Books.title)
   FROM Characters
   LEFT JOIN characters
   ON Character_books.character_id = Characters.id
